@@ -1,0 +1,44 @@
+.wishlist {
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  width: 22rem;
+  padding: 10px;
+  max-height: 25rem;
+  background-color: cadetblue;
+  overflow-y: scroll;
+  z-index: 999;
+  border-radius: 10px;
+
+  img {
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+  }
+
+  .wrapper {
+    margin-bottom: 4px;
+    border-bottom: 2px solid greenyellow;
+    padding: 5px 0;
+    span {
+      margin-bottom: 8px;
+      font-size: 15px;
+      color: beige;
+    }
+
+    .img-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .delete {
+        font-size: 20px;
+        color: red;
+        opacity: 0.6;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
